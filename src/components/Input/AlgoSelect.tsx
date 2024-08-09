@@ -9,8 +9,9 @@ import styled from 'styled-components';
   RR - Round-Robin
   NPP - Non-preemptive Priority
   PP - Preemptive Priority
+  MQS - Multilevel Queue Scheduling
 */
-export type AlgoType = 'FCFS' | 'SJF' | 'SRTF' | 'RR' | 'NPP' | 'PP';
+export type AlgoType = 'FCFS' | 'SJF' | 'SRTF' | 'RR' | 'NPP' | 'PP'| 'MQS';
 export type OptionType = {
   value: AlgoType;
   label: string;
@@ -42,6 +43,10 @@ const options: OptionType[] = [
   {
     value: 'PP',
     label: 'Priority (preemptive)',
+  },
+  {
+    value: 'MQS',
+    label: 'Multilevel Queue Scheduling, MQS',
   },
 ];
 

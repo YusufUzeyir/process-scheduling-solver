@@ -234,7 +234,7 @@ const Input = (props: InputProps) => {
             ref={burstTimeRef}
           />
         </fieldset>
-        {selectedAlgo.value === 'RR' && (
+        {(selectedAlgo.value === 'RR'|| selectedAlgo.value === 'MQS') && (
           <fieldset>
             <label htmlFor="time-quantum">Time Quantum</label>
             <input
@@ -248,7 +248,7 @@ const Input = (props: InputProps) => {
             />
           </fieldset>
         )}
-        {(selectedAlgo.value === 'NPP' || selectedAlgo.value === 'PP') && (
+        {(selectedAlgo.value === 'NPP' || selectedAlgo.value === 'PP'|| selectedAlgo.value === 'MQS') && (
           <fieldset>
             <label htmlFor="priorities">Priorities</label>
             <input
